@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,16 +12,49 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    <view key="view" contentMode="scaleToFill" id="qxp-kJ-hVX">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="844" placeholderIntrinsicHeight="354" translatesAutoresizingMaskIntoConstraints="NO" id="MdA-xx-jJU">
+                                <rect key="frame" x="16" y="503.66666666666674" width="396" height="388.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThY-hy-QaN">
+                                <rect key="frame" x="16" y="44" width="396" height="401.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Apb-kB-bh1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Apb-kB-bh1" firstAttribute="trailing" secondItem="MdA-xx-jJU" secondAttribute="trailing" constant="16" id="5mk-Q1-K3j"/>
+                            <constraint firstItem="MdA-xx-jJU" firstAttribute="top" secondItem="ThY-hy-QaN" secondAttribute="bottom" constant="58" id="6uk-zU-bOP"/>
+                            <constraint firstItem="MdA-xx-jJU" firstAttribute="height" secondItem="qxp-kJ-hVX" secondAttribute="height" multiplier="0.419431" id="Amc-Vl-RPv"/>
+                            <constraint firstItem="MdA-xx-jJU" firstAttribute="leading" secondItem="Apb-kB-bh1" secondAttribute="leading" constant="16" id="DcB-ah-D79"/>
+                            <constraint firstItem="ThY-hy-QaN" firstAttribute="leading" secondItem="Apb-kB-bh1" secondAttribute="leading" constant="16" id="E70-z3-aQ1"/>
+                            <constraint firstItem="ThY-hy-QaN" firstAttribute="top" secondItem="Apb-kB-bh1" secondAttribute="top" id="I01-WW-wA4"/>
+                            <constraint firstItem="MdA-xx-jJU" firstAttribute="top" secondItem="ThY-hy-QaN" secondAttribute="bottom" constant="58" id="JDp-Ku-GQu"/>
+                            <constraint firstItem="ThY-hy-QaN" firstAttribute="centerX" secondItem="Apb-kB-bh1" secondAttribute="centerX" id="Win-nZ-Now"/>
+                            <constraint firstItem="Apb-kB-bh1" firstAttribute="trailing" secondItem="ThY-hy-QaN" secondAttribute="trailing" constant="16" id="fCh-AV-5O5"/>
+                            <constraint firstItem="MdA-xx-jJU" firstAttribute="bottom" secondItem="Apb-kB-bh1" secondAttribute="bottom" id="llP-4t-2AP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.769230769230766" y="374.64454976303318"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
